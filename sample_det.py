@@ -1,0 +1,26 @@
+from datetime import date
+
+print("Enter first name:")
+fn = input()
+print("Enter last name:")
+ln = input()
+print("Enter Date of birth: YYYY MM DD")
+yy = int(input())
+mm = int(input())
+dd = int(input())
+dob = date(yy,mm,dd)
+print("Enter address:")
+addr = input()
+print("Enter phone no.:")
+phno = int(input())
+print("Enter highest qualification:")
+qual = input()
+print("Enter percentage:")
+perc = float(input())
+
+today = date.today()
+
+print("The customer's name is ",fn+" "+ln)
+print("Born on",dob,", Age:",dob.year-today.year)
+print("Contact details:",phno)
+print("The customer has completed "+qual+" with",perc,"percentage")
