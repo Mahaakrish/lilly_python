@@ -93,7 +93,7 @@ while True:
 
 while True:
     rel = input("Relocation required: Yes/No")
-    if rel.lower=="yes" or rel.lower=="no":
+    if rel.lower()=="yes" or rel.lower()=="no":
         break
     else:
         print("Only yes or no is taken as input.. Plese give valid answer..")
