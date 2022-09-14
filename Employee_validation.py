@@ -17,6 +17,13 @@ while True:
         print("Enter valid name")
 
 while True:
+    eid = input("Enter your Employee id: ")
+    if eid=="":
+        print("Field cannot be empty..")
+    else:
+        break
+
+while True:
     phno = input("Enter your phone number: ")
     if phno.isnumeric():
         if len(phno)!=10:
@@ -33,6 +40,8 @@ while True:
     if age.isnumeric():
         if len(age)>3:
             print("Enter valid age")
+        elif int(age)<20:
+            print("Age cannot be less than 20..")
         else:
             break
     else:
@@ -82,7 +91,15 @@ while True:
             print("Field cannot be empty..")
         print("Enter valid PAN No..")
 
-print(f"The employee {fname,lname} of department {dept} is from {city}, age:{age}")
+while True:
+    rel = input("Relocation required: Yes/No")
+    if rel.lower=="yes" or rel.lower=="no":
+        break
+    else:
+        print("Only yes or no is taken as input.. Plese give valid answer..")
+
+print(f"The employee {fname,lname} (ID: {eid}) of department {dept} is from {city}, age:{age}")
 print(f"Ph No: {phno}")
 print(f"Salary: {salary}")
 print(f"PAN No: {pan}")
+print(f"Relocation program: {rel}")
