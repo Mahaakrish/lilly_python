@@ -67,7 +67,7 @@ while True:
 while True:
     pan = input("Enter your PAN No: ")
     if pan.isalnum():
-        if len(pan)==9:
+        if len(pan)==10:
             p1 = pan[0:5]
             p2 = pan[5:9]
             p3 = pan[9]
@@ -82,3 +82,7 @@ while True:
             print("Field cannot be empty..")
         print("Enter valid PAN No..")
 
+print(f"The employee {fname,lname} of department {dept} is from {city}, age:{age}")
+print(f"Ph No: {phno}")
+print(f"Salary: {salary}")
+print(f"PAN No: {pan}")
